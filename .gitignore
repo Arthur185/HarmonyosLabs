@@ -37,6 +37,7 @@ google-services.json
 /local.properties
 /.idea
 **/build
+.hvigor/
 /.hvigor
 .cxx
 /.clangd
