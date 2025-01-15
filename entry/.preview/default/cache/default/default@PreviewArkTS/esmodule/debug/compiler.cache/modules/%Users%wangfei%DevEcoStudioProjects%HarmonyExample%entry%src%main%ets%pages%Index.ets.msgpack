@@ -1,0 +1,278 @@
+Ôr@Ÿªassertions¤code´customTransformCache¬dependencies¢id¤meta±moduleSideEffects¬originalCode±originalSourcemap«resolvedIds®sourcemapChainµsyntheticNamedExportsµtransformDependencies®transformFiles¨cacheAstÔrAÚ Xif (!("finalizeConstruction" in ViewPU.prototype)) {
+    Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
+}
+import AppBar from '../components/AppBar';
+class Index extends ViewPU {
+    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
+        super(parent, __localStorage, elmtId, extraInfo);
+        if (typeof paramsLambda === "function") {
+            this.paramsGenerator_ = paramsLambda;
+        }
+        this.__message = new ObservedPropertySimplePU('Hello World', this, "message");
+        this.__counter = new ObservedPropertySimplePU(0, this, "counter");
+        this.setInitiallyProvidedValue(params);
+        this.finalizeConstruction();
+    }
+    setInitiallyProvidedValue(params) {
+        if (params.message !== undefined) {
+            this.message = params.message;
+        }
+        if (params.counter !== undefined) {
+            this.counter = params.counter;
+        }
+    }
+    updateStateVars(params) {
+    }
+    purgeVariableDependenciesOnElmtId(rmElmtId) {
+        this.__message.purgeDependencyOnElmtId(rmElmtId);
+        this.__counter.purgeDependencyOnElmtId(rmElmtId);
+    }
+    aboutToBeDeleted() {
+        this.__message.aboutToBeDeleted();
+        this.__counter.aboutToBeDeleted();
+        SubscriberManager.Get().delete(this.id__());
+        this.aboutToBeDeletedInternal();
+    }
+    get message() {
+        return this.__message.get();
+    }
+    set message(newValue) {
+        this.__message.set(newValue);
+    }
+    get counter() {
+        return this.__counter.get();
+    }
+    set counter(newValue) {
+        this.__counter.set(newValue);
+    }
+    tailing(parent = null) {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            SymbolGlyph.create({ "id": 125831713, "type": 40000, params: [], "bundleName": "com.wangfei.harmonyexample", "moduleName": "entry" });
+            SymbolGlyph.debugLine("entry/src/main/ets/pages/Index.ets(11:5)", "entry");
+            SymbolGlyph.fontSize(24);
+            SymbolGlyph.fontColor([Color.White]);
+            SymbolGlyph.fontWeight(FontWeight.Bold);
+        }, SymbolGlyph);
+    }
+    leading(parent = null) {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            SymbolGlyph.create({ "id": 125833227, "type": 40000, params: [], "bundleName": "com.wangfei.harmonyexample", "moduleName": "entry" });
+            SymbolGlyph.debugLine("entry/src/main/ets/pages/Index.ets(19:5)", "entry");
+            SymbolGlyph.fontSize(24);
+            SymbolGlyph.fontColor([Color.White]);
+            SymbolGlyph.fontWeight(FontWeight.Bold);
+        }, SymbolGlyph);
+    }
+    initialRender() {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // RelativeContainer() {
+            //   Text(this.message)
+            //     .id('HelloWorld')
+            //     .fontSize(50)
+            //     .fontWeight(FontWeight.Bold)
+            //     .alignRules({
+            //       center: { anchor: '__container__', align: VerticalAlign.Center },
+            //       middle: { anchor: '__container__', align: HorizontalAlign.Center }
+            //     })
+            // }
+            // .height('100%')
+            // .width('100%')
+            Stack.create();
+            Stack.debugLine("entry/src/main/ets/pages/Index.ets(38:5)", "entry");
+            // RelativeContainer() {
+            //   Text(this.message)
+            //     .id('HelloWorld')
+            //     .fontSize(50)
+            //     .fontWeight(FontWeight.Bold)
+            //     .alignRules({
+            //       center: { anchor: '__container__', align: VerticalAlign.Center },
+            //       middle: { anchor: '__container__', align: HorizontalAlign.Center }
+            //     })
+            // }
+            // .height('100%')
+            // .width('100%')
+            Stack.alignContent(Alignment.BottomEnd);
+        }, Stack);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.debugLine("entry/src/main/ets/pages/Index.ets(39:7)", "entry");
+            Column.backgroundColor('#44ff0000');
+            Column.alignItems(HorizontalAlign.Start);
+            Column.width('100%');
+            Column.height('100%');
+        }, Column);
+        {
+            this.observeComponentCreation2((elmtId, isInitialRender) => {
+                if (isInitialRender) {
+                    let componentCall = new AppBar(this, { title: 'è®¡æ•°å™¨', leading: this.leading, tailing: this.tailing }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Index.ets", line: 40, col: 9 });
+                    ViewPU.create(componentCall);
+                    let paramsLambda = () => {
+                        return {
+                            title: 'è®¡æ•°å™¨',
+                            leading: this.leading,
+                            tailing: this.tailing
+                        };
+                    };
+                    componentCall.paramsGenerator_ = paramsLambda;
+                }
+                else {
+                    this.updateStateVarsOfChildByElmtId(elmtId, {
+                        title: 'è®¡æ•°å™¨'
+                    });
+                }
+            }, { name: "AppBar" });
+        }
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.debugLine("entry/src/main/ets/pages/Index.ets(41:9)", "entry");
+            Column.width('100%');
+            Column.height('100%');
+            Column.justifyContent(FlexAlign.Center);
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create('ä¸‹é¢æ˜¯ä½ ç‚¹å‡»æŒ‰é’®çš„æ¬¡æ•°');
+            Text.debugLine("entry/src/main/ets/pages/Index.ets(42:11)", "entry");
+            Text.fontSize(18);
+        }, Text);
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create(this.counter.toString());
+            Text.debugLine("entry/src/main/ets/pages/Index.ets(44:11)", "entry");
+            Text.fontSize(36);
+            Text.fontColor('#2e3032');
+            Text.margin(10);
+        }, Text);
+        Text.pop();
+        Column.pop();
+        Column.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Button.createWithChild({ type: ButtonType.Circle, stateEffect: true });
+            Button.debugLine("entry/src/main/ets/pages/Index.ets(60:7)", "entry");
+            Button.onClick(() => this.counter++);
+            Button.width(56);
+            Button.height(56);
+            Button.margin(20);
+            Button.backgroundColor('#317bd4');
+        }, Button);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            SymbolGlyph.create({ "id": 125831483, "type": 40000, params: [], "bundleName": "com.wangfei.harmonyexample", "moduleName": "entry" });
+            SymbolGlyph.debugLine("entry/src/main/ets/pages/Index.ets(61:9)", "entry");
+            SymbolGlyph.fontSize(24);
+            SymbolGlyph.fontColor([Color.White]);
+            SymbolGlyph.fontWeight(FontWeight.Bold);
+        }, SymbolGlyph);
+        Button.pop();
+        // RelativeContainer() {
+        //   Text(this.message)
+        //     .id('HelloWorld')
+        //     .fontSize(50)
+        //     .fontWeight(FontWeight.Bold)
+        //     .alignRules({
+        //       center: { anchor: '__container__', align: VerticalAlign.Center },
+        //       middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        //     })
+        // }
+        // .height('100%')
+        // .width('100%')
+        Stack.pop();
+    }
+    rerender() {
+        this.updateDirtyElements();
+    }
+    static getEntryName() {
+        return "Index";
+    }
+}
+registerNamedRoute(() => new Index(undefined, {}), "", { bundleName: "com.wangfei.harmonyexample", moduleName: "entry", pagePath: "pages/Index", pageFullPath: "entry/src/main/ets/pages/Index", integratedHsp: "false", moduleType: "followWithHap" });
+//# sourceMappingURL=Index.js.mapÂ‘Ù[/Users/wangfei/DevEcoStudioProjects/HarmonyExample/entry/src/main/ets/components/AppBar.etsÙU/Users/wangfei/DevEcoStudioProjects/HarmonyExample/entry/src/main/ets/pages/Index.etsÔrB›ªmoduleName±isLocalDependency¯isNodeEntryFile§pkgPath±belongProjectPath§pkgNameªpkgVersion±dependencyPkgInfo°belongModulePath¬shouldEmitJs¯hostModulesInfo¥entryÃÂÙ8/Users/wangfei/DevEcoStudioProjects/HarmonyExample/entryÙ2/Users/wangfei/DevEcoStudioProjects/HarmonyExample¥entry¥1.0.0Ô  Ù8/Users/wangfei/DevEcoStudioProjects/HarmonyExample/entryÃÃÚfimport AppBar from '../components/AppBar';
+
+@Entry
+@Component
+struct Index {
+  @State message: string = 'Hello World';
+  @State counter: number = 0
+
+  @Builder
+  tailing() {
+    SymbolGlyph($r('sys.symbol.dot_grid_1x2'))
+      .fontSize(24)
+      .fontColor([Color.White])
+      .fontWeight(FontWeight.Bold)
+  }
+
+  @Builder
+  leading() {
+    SymbolGlyph($r('sys.symbol.access_card'))
+      .fontSize(24)
+      .fontColor([Color.White])
+      .fontWeight(FontWeight.Bold)
+  }
+
+  build() {
+    // RelativeContainer() {
+    //   Text(this.message)
+    //     .id('HelloWorld')
+    //     .fontSize(50)
+    //     .fontWeight(FontWeight.Bold)
+    //     .alignRules({
+    //       center: { anchor: '__container__', align: VerticalAlign.Center },
+    //       middle: { anchor: '__container__', align: HorizontalAlign.Center }
+    //     })
+    // }
+    // .height('100%')
+    // .width('100%')
+    Stack() {
+      Column() {
+        AppBar({ title: 'è®¡æ•°å™¨', leading: this.leading, tailing: this.tailing })
+        Column() {
+          Text('ä¸‹é¢æ˜¯ä½ ç‚¹å‡»æŒ‰é’®çš„æ¬¡æ•°')
+            .fontSize(18)
+          Text(this.counter.toString())
+            .fontSize(36)
+            .fontColor('#2e3032')
+            .margin(10)
+        }
+        // .backgroundColor('#44ff00ff')
+        .width('100%')
+        .height('100%')
+        .justifyContent(FlexAlign.Center)
+      }
+      .backgroundColor('#44ff0000')
+      .alignItems(HorizontalAlign.Start)
+
+      .width('100%')
+      .height('100%')
+
+      Button({ type: ButtonType.Circle, stateEffect: true }) {
+        SymbolGlyph($r('sys.symbol.plus_circle_fill'))
+          .fontSize(24)
+          .fontColor([Color.White])
+          .fontWeight(FontWeight.Bold)
+      }
+      .onClick(() => this.counter++)
+      .width(56)
+      .height(56)
+      .margin(20)
+      .backgroundColor('#317bd4')
+    }.alignContent(Alignment.BottomEnd)
+  }
+}
+
+ÀÔrC‘´../components/AppBarÔrD—ªassertions¨external¢id¤meta±moduleSideEffectsªresolvedByµsyntheticNamedExportsAÂÙ[/Users/wangfei/DevEcoStudioProjects/HarmonyExample/entry/src/main/ets/components/AppBar.etsAÃªoh-resolveÂ’ÔrE–§version¤fileªsourceRoot§sources¥names¨mappings¨Index.js ‘©Index.etsÜ ²–”    ”  ”  ”  ”)  )”*  *’” ” ‘”  ’”6 ”ÌC (’”6 ”7 ‘”  *’” 	” ’” 	” ’” 	” ’” 	” ’” 	” 		’” 
+” 
+–” 
+” 
+” ”  ”! ”# š” 
+” 
+” ”! ”" ”# ”( ”) ”. ”/ ˜” 
+” 
+” ”" ”# ”- ”. ”2 !‘” ’” ” 	’” ” –” ” ” ”  ”! ”# š” ” ” ”! ”" ”# ”( ”) ”. ”/ ˜” ” ” ”" ”# ”- ”. ”2 !‘” ‘” ’” ”$ ’” ”# ’” ”$ ’” ”  ’” ”/ '’” ”  ’” ”ÌV ÌN’”  ”ÌW  ÌO’” !” !’” "” "’” #” #’” $” $’” %” %	’” ”$ ’” ”# ’” ”$ ’” ”  ’” ”/ '’” ”  ’” ”ÌV ÌN’”  ”ÌW  ÌO’” !” !’” "” "’” #” #’” $” $˜” %” %	” ÌF” ÌF” ÌF”( ÌF”) ÌF”2 ÌF&’” &” &–” &” &” 5”" 5”# 5”. 5"˜” &” &” 6” 6” 6”- 6!”. 6"”3 6'–” &” &” 8” 8” 8” 8–” &” &” 9” 9” 9”  9Ü ”, '”2 '”9 '”; '”Ì@ '”ÌB '”ÌG '”ÌI '”ÌP '&”ÌR '(”ÌV ',”ÌW '-”Ì^ '4”Ì` '6”Ìg '=”Ìi '?”Ìm 'ÌC”Ìn 'ÌD”Ìu 'ÌK”Ìw 'ÌM”” '”! '”# '”( '–” '”# '&”% '(”) ',”* '-”1 '4–” '6”# '=”% '?”) 'ÌC”* 'ÌD”1 'ÌK”” '” '” '”$ '’” (” (–” (” (” 1	” 1” 1” 1–” (” (” 2	” 2” 2”  2˜” (” (” 3	”! 3”" 3”+ 3!”, 3"”2 3(”” )
+” )” )”% )–” )
+” )” *” *” *” *’” )
+” )™” +
+” +” +” +” +”$ +”% +”- +$”/ +&–” +
+” +” ,” ,” ,” ,–” +
+” +” -” -” -”$ - –” +
+” +” .” .” .” .’” +
+” +’” (” (’” &” &” ;” ;”# ;”% ;”) ;”+ ;”5 ;”6 ; ”< ;&”> ;(”ÌI ;3”ÌK ;5”ÌO ;9”ÌQ ;;œ” ;” ;” ÌA” ÌA” ÌA” ÌA”  ÌA”! ÌA”% ÌA”& ÌA”- ÌA!”/ ÌA#–” ;” ;” ÌB” ÌB” ÌB” ÌB–” ;” ;” ÌC” ÌC” ÌC” ÌC–” ;” ;” ÌD” ÌD” ÌD” ÌD–” ;” ;” ÌE”" ÌE”# ÌE”, ÌE ’” <” <–” <” <” =”  =”! =”# =š” <” <” >”! >”" >”# >”( >”) >”. >!”/ >"˜” <” <” ?”" ?”# ?”- ? ”. ?!”2 ?%’” ;” ;’” ”  ’” ” ’” ”  ’” ” ’” ”+ '’” ” ’” ”ÌR ÌN’”  ”ÌS  ÌO’” !” !’” "” "’” #” #’” $” $’” %” %	‘” ÌGÔrF–§version¤file§sources®sourcesContent¥names¨mappingsÀ‘À‘ÀÜ »‘”    ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”  	 ‘”  
+ ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”   ‘”    ‘”  ! ‘”  " ‘”  # ‘”  $ ‘”  % ‘”  & ‘”  ' ‘”  ( ‘”  ) ‘”  * ‘”  + ‘”  , ‘”  - ‘”  . ‘”  / ‘”  0 ‘”  1 ‘”  2 ‘”  3 ‘”  4 ‘”  5 ‘”  6 ‘”  7 ‘”  8 ‘”  9 ‘”  : ‘”  ; ‘”  < ‘”  = ‘”  > ‘”  ? ‘”  Ì@ ‘”  ÌA ‘”  ÌB ‘”  ÌC ‘”  ÌD ‘”  ÌE ‘”  ÌF ‘”  ÌG ‘”  ÌH ‘”  ÌI ‘”  ÌJ ‘”  ÌK ‘”  ÌL ‘”  ÌM ‘”  ÌN ‘”  ÌO ‘”  ÌP ‘”  ÌQ ‘”  ÌR ‘”  ÌS ‘”  ÌT ‘”  ÌU ‘”  ÌV ‘”  ÌW ‘”  ÌX ‘”  ÌY ‘”  ÌZ ‘”  Ì[ ‘”  Ì\ ‘”  Ì] ‘”  Ì^ ‘”  Ì_ ‘”  Ì` ‘”  Ìa ‘”  Ìb ‘”  Ìc ‘”  Ìd ‘”  Ìe ‘”  Ìf ‘”  Ìg ‘”  Ìh ‘”  Ìi ‘”  Ìj ‘”  Ìk ‘”  Ìl ‘”  Ìm ‘”  Ìn ‘”  Ìo ‘”  Ìp ‘”  Ìq ‘”  Ìr ‘”  Ìs ‘”  Ìt ‘”  Ìu ‘”  Ìv ‘”  Ìw ‘”  Ìx ‘”  Ìy ‘”  Ìz ‘”  Ì{ ‘”  Ì| ‘”  Ì} ‘”  Ì~ ‘”  Ì ‘”  Ì€ ‘”  Ì ‘”  Ì‚ ‘”  Ìƒ ‘”  Ì„ ‘”  Ì… ‘”  Ì† ‘”  Ì‡ ‘”  Ìˆ ‘”  Ì‰ ‘”  ÌŠ ‘”  Ì‹ ‘”  ÌŒ ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì ‘”  Ì‘ ‘”  Ì’ ‘”  Ì“ ‘”  Ì” ‘”  Ì• ‘”  Ì– ‘”  Ì— ‘”  Ì˜ ‘”  Ì™ ‘”  Ìš ‘”  Ì› ‘”  Ìœ ‘”  Ì ‘”  Ì ‘”  ÌŸ ‘”  Ì  ‘”  Ì¡ ‘”  Ì¢ ‘”  Ì£ ‘”  Ì¤ ‘”  Ì¥ ‘”  Ì¦ ‘”  Ì§ ‘”  Ì¨ ‘”  Ì© ‘”  Ìª ‘”  Ì« ‘”  Ì¬ ‘”  Ì­ ‘”  Ì® ‘”  Ì¯ ‘”  Ì° ‘”  Ì± ‘”  Ì² ‘”  Ì³ ‘”  Ì´ ‘”  Ìµ ‘”  Ì¶ ‘”  Ì· ‘”  Ì¸ ‘”  Ì¹ ‘”  Ìº ÂÔ  ÔrG”²dynamicImportCache¹exportAllDeclarationCache»exportNamedDeclarationCache«importCache‘ÔrH•¤type¥start£endªspecifiers¦source±ImportDeclarationÌ€Ìª‘ÔrI”¤type¥start£end¥local¶ImportDefaultSpecifierÌ‡ÌÔrJ”¤type¥start£end¤nameªIdentifierÌ‡Ì¦AppBarÔrK•¤type¥start£end¥value£raw§LiteralÌ“Ì©´../components/AppBar¶'../components/AppBar'
