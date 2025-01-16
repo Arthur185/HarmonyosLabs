@@ -1,1 +1,2 @@
-# HarmonyosLabs
+## Harmonyos探索项目
+2025-1-16 项目进度--简单计数器页面搭建
